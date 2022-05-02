@@ -1,6 +1,6 @@
 node_modules
 .DS_Store
-output*
-assets/*
-mask.png
+output/*.png
+output-2/*.jpg
+assets/*.png
 filenames.csv
