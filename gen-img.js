@@ -46,9 +46,11 @@ const sharp = require('sharp')
       imgs.get(M[1]), // B
       imgs.get(M[3]), // D
       ...(mode === 'G' ? [imgs.get(gh)] : []), // G
+      ...(M[4] === 'E4' ? [imgs.get('E4a')] : []), // E4a
       imgs.get(M[5]), // F
       imgs.get(M[4]), // E
       imgs.get(M[2]), // C
+      ...(M[2] === 'C12' ? [imgs.get('C12a')] : []), // C12a
     ]
 
     if (inputs.findIndex((item) => !item) !== -1) {
